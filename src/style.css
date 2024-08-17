@@ -1,0 +1,49 @@
+:root {
+  --white: #fff;
+  --brack: #000;
+  --accent-color: #becbec;
+  --transition: all .15s;
+  --ff: Ubuntu mono, "源ノ角ゴシック";
+  --fz: calc(30px + 2vw);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw; height: 100vh;
+  overflow: hidden;
+  display: flex; justify-content: center; align-items: center;
+}
+
+.board {
+  display: flex;
+}
+
+.status {
+  position: absolute;
+  top: 50vh;
+  left: 20vw;
+  font-size: var(--fz);
+  font-family: var(--ff);
+  transform: translate(-50%, -50%);
+}
+
+.square {
+  display: block;
+  width: 7.5vw; aspect-ratio: 1;
+  background-color: var(--white);
+  color: var(--brack);
+  font-family: var(--ff);
+  font-size: var(--fz);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex; justify-content: center; align-items: center;
+}
+.square:hover {
+  background-color: var(--accent-color);
+}
