@@ -33,6 +33,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.game-info {
+  position: absolute;
+  top: 50vh;
+  right: 20vw;
+  transform: translate(0, -50%);
+}
+
 .square {
   display: block;
   width: 7.5vw; aspect-ratio: 1;
